@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+ * Course: CS 3410
+ * Section: 3
+ * Name: Jimmy Nguyen
+ * Professor: Alan Shaw
+ * Assignment #: Module Assignment #8
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,26 +18,26 @@ namespace ShoppingCartV2.Controllers
     public partial class HomeController : Controller
     {
         // Text for Site Heading
-        string siteHeading = "The Fun Cake Store";
+        string siteHeading = "Beyond The Bath";
 
         // Text for Order View Heading
-        string orderHeading = "Cake Orders";
+        string orderHeading = "The Goods...";
 
         // Text for View Heading for each Tab
-        string[] tabHeadings = { "Home", "Single Layer Cake",
+        string[] tabHeadings = { "Home", "Scented Candles", "Bar Soaps", "Hand Soaps",
                                          "Check-Out", "Admin", "About" };
 
         // View label displayed on each Tab
-        string[] tabLabels = { "Home", "1-Layer",
+        string[] tabLabels = { "Home", "Scented Candles", "Bar Soaps", "Hand Soaps",
                                        "Check-Out", "Admin", "About" };
 
         // View method name for each Tab
-        string[] tabViews = { "Index", "Tab1Orders",
+        string[] tabViews = { "Index", "Tab1Orders", "Tab2Orders", "Tab3Orders",
                                        "CheckOut", "Admin", "About" };
 
         // Text for View Heading of any Options columns
-        string[] optionsColumnHeading = { "", "Single Layer Options",
-                                              "", "", "" };
+        string[] optionsColumnHeading = { "Member Discount", "Have Coupon",
+                                              "Post Card", "", "" };
 
         // The tax rate is 5%
         decimal taxRate = 0.05M;
@@ -41,7 +49,7 @@ namespace ShoppingCartV2.Controllers
 
             ViewBag.Message = "Welcome To " + siteHeading;
             ViewBag.Message2 = "<img src=\"/Images/logo.jpg\">";
-            ViewBag.Message2 += "<br />This is the Cake Store of your Dreams!";
+            ViewBag.Message2 += "<br />Let The Smells Take You Away!";
             return View();
         }
 
@@ -51,7 +59,7 @@ namespace ShoppingCartV2.Controllers
             Session["PageHeading"] = siteHeading;
 
             ViewBag.Message = "About " + siteHeading;
-            ViewBag.Message2 = "Modify this to identify yourself as the Webmaster.";
+            ViewBag.Message2 = "Jimmy Nguyen.";
             return View();
         }
 
@@ -66,6 +74,32 @@ namespace ShoppingCartV2.Controllers
         public ActionResult Tab1Orders(string button, FormCollection collection)
         {
             return ProcessTabView(1, button, collection);
+        }
+
+        // Action Method for Second Product View
+        public ActionResult Tab2Orders()
+        {
+            return GetTabView(2);
+        }
+
+        // Action Method to Process Second Product View
+        [HttpPost]
+        public ActionResult Tab2Orders(string button, FormCollection collection)
+        {
+            return ProcessTabView(2, button, collection);
+        }
+
+        // Action Method for Third Product View
+        public ActionResult Tab3Orders()
+        {
+            return GetTabView(3);
+        }
+
+        // Action Method to Process Third Product View
+        [HttpPost]
+        public ActionResult Tab3Orders(string button, FormCollection collection)
+        {
+            return ProcessTabView(3, button, collection);
         }
 
     }

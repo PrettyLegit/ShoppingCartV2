@@ -88,6 +88,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -205,13 +207,139 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Customer.cs">
+      <DependentUpon>CustomersModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\CustomerMetadata.cs" />
+    <Compile Include="Models\CustomersModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomersModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CustomersModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomersModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CustomersModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomersModel.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Models\CustomerWithPurchase.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Intersection.cs">
+      <DependentUpon>IntersectionsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\IntersectionsModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IntersectionsModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\IntersectionsModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IntersectionsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\IntersectionsModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IntersectionsModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LineItem.cs">
+      <DependentUpon>LineItemsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LineItemsModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LineItemsModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LineItemsModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LineItemsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LineItemsModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LineItemsModel.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Option.cs">
+      <DependentUpon>OptionsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OptionAssociation.cs">
+      <DependentUpon>OptionAssociationsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OptionAssociationsModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OptionAssociationsModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OptionAssociationsModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OptionAssociationsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OptionAssociationsModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OptionAssociationsModel.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Models\OptionMetadata.cs" />
+    <Compile Include="Models\OptionsModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OptionsModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OptionsModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OptionsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OptionsModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OptionsModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Product.cs">
+      <DependentUpon>ProductsModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\ProductMetadata.cs" />
+    <Compile Include="Models\ProductsModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductsModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ProductsModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ProductsModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductsModel.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Models\ProductWithOption.cs" />
+    <Compile Include="Models\PurchaseOrder.cs">
+      <DependentUpon>PurchaseOrdersModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PurchaseOrdersModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PurchaseOrdersModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PurchaseOrdersModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PurchaseOrdersModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PurchaseOrdersModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PurchaseOrdersModel.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Models\PurchaseOrderWithDetails.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -261,10 +389,129 @@
     <Content Include="Images\Tag3CrispApple.jpg" />
     <Content Include="Images\Tag3KitchenLemon.jpg" />
     <Content Include="Images\Tag3SweetMintRain.jpg" />
+    <Content Include="Models\CustomersModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CustomersModel.edmx</DependentUpon>
+      <LastGenOutput>CustomersModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\CustomersModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CustomersModel.edmx</DependentUpon>
+      <LastGenOutput>CustomersModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\IntersectionsModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>IntersectionsModel.edmx</DependentUpon>
+      <LastGenOutput>IntersectionsModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\IntersectionsModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>IntersectionsModel.edmx</DependentUpon>
+      <LastGenOutput>IntersectionsModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\LineItemsModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LineItemsModel.edmx</DependentUpon>
+      <LastGenOutput>LineItemsModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\LineItemsModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LineItemsModel.edmx</DependentUpon>
+      <LastGenOutput>LineItemsModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\OptionAssociationsModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>OptionAssociationsModel.edmx</DependentUpon>
+      <LastGenOutput>OptionAssociationsModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\OptionAssociationsModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>OptionAssociationsModel.edmx</DependentUpon>
+      <LastGenOutput>OptionAssociationsModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\OptionsModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>OptionsModel.edmx</DependentUpon>
+      <LastGenOutput>OptionsModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\OptionsModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>OptionsModel.edmx</DependentUpon>
+      <LastGenOutput>OptionsModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\ProductsModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ProductsModel.edmx</DependentUpon>
+      <LastGenOutput>ProductsModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\ProductsModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ProductsModel.edmx</DependentUpon>
+      <LastGenOutput>ProductsModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\PurchaseOrdersModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PurchaseOrdersModel.edmx</DependentUpon>
+      <LastGenOutput>PurchaseOrdersModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\PurchaseOrdersModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PurchaseOrdersModel.edmx</DependentUpon>
+      <LastGenOutput>PurchaseOrdersModel.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EntityDeploy Include="Models\CustomersModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>CustomersModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\CustomersModel.edmx.diagram">
+      <DependentUpon>CustomersModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\ProductsModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ProductsModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\ProductsModel.edmx.diagram">
+      <DependentUpon>ProductsModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\OptionsModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>OptionsModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\OptionsModel.edmx.diagram">
+      <DependentUpon>OptionsModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\IntersectionsModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>IntersectionsModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\IntersectionsModel.edmx.diagram">
+      <DependentUpon>IntersectionsModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\PurchaseOrdersModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>PurchaseOrdersModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\PurchaseOrdersModel.edmx.diagram">
+      <DependentUpon>PurchaseOrdersModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\LineItemsModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>LineItemsModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\LineItemsModel.edmx.diagram">
+      <DependentUpon>LineItemsModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\OptionAssociationsModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>OptionAssociationsModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\OptionAssociationsModel.edmx.diagram">
+      <DependentUpon>OptionAssociationsModel.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -335,8 +582,13 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\CreateProduct.cshtml" />
+    <Content Include="Views\Home\Tab1Orders.cshtml" />
+    <Content Include="Views\Home\Tab2Orders.cshtml" />
+    <Content Include="Views\Home\Tab3Orders.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
