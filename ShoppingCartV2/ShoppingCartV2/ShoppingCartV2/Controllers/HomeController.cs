@@ -48,7 +48,7 @@ namespace ShoppingCartV2.Controllers
             Session["PageHeading"] = siteHeading;
 
             ViewBag.Message = "Welcome To " + siteHeading;
-            ViewBag.Message2 = "<img src=\"/Images/logo.jpg\">";
+            ViewBag.Message2 = "<img src=\"/Images/smell_logo.jpg\">";
             ViewBag.Message2 += "<br />Let The Smells Take You Away!";
             return View();
         }
@@ -59,7 +59,9 @@ namespace ShoppingCartV2.Controllers
             Session["PageHeading"] = siteHeading;
 
             ViewBag.Message = "About " + siteHeading;
-            ViewBag.Message2 = "Jimmy Nguyen.";
+            ViewBag.Message2 = "<img src=\"/Images/aboutus.jpg\">";
+            ViewBag.Message2 += "Developed by Jimmy Nguyen.";
+            ViewBag.Message2 += "Disclaimer: this is for educational purposes. All right reserved to to their respective owners.";
             return View();
         }
 
