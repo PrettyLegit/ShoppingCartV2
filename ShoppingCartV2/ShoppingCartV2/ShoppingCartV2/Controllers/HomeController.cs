@@ -60,7 +60,7 @@ namespace ShoppingCartV2.Controllers
 
             ViewBag.Message = "About " + siteHeading;
             ViewBag.Message2 = "<img src=\"/Images/aboutus.jpg\">";
-            ViewBag.Message2 += "Developed by Jimmy Nguyen.";
+            ViewBag.Message2 += "Developed by Jimmy Nguyen. ";
             ViewBag.Message2 += "Disclaimer: this is for educational purposes. All right reserved to to their respective owners.";
             return View();
         }
